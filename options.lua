@@ -3,10 +3,14 @@ return {
   opt = {
     -- set to true or false etc.
     relativenumber = true, -- sets vim.opt.relativenumber
-    number = true, -- sets vim.opt.number
-    spell = false, -- sets vim.opt.spell
-    signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-    wrap = false, -- sets vim.opt.wrap
+    number = true,         -- sets vim.opt.number
+    spell = false,         -- sets vim.opt.spell
+    signcolumn = "auto",   -- sets vim.opt.signcolumn to auto
+    wrap = false,          -- sets vim.opt.wrap
+    shiftwidth = 4,        -- sets vim.opt.shiftwidth
+    softtabstop = 4,       -- sets vim.opt.softtabstop
+    tabstop = 8,           -- sets vim.opts.tabstop
+    wrapscan = false,      -- 搜索到文件两端不重新搜索
   },
   g = {
     mapleader = " ",                 -- sets vim.g.mapleader
