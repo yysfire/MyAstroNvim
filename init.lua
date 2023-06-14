@@ -97,6 +97,25 @@ return {
     })
 
     vim.api.nvim_create_autocmd("FileType", {
+      pattern = {
+        "css",
+        "html",
+        "htmldjango",
+        "javascript",
+        "jsx",
+        "markdown",
+        "md",
+        "toml",
+        "vim",
+        "vue",
+        "xml",
+        "yaml",
+        "yml",
+      },
+      command = "setlocal shiftwidth=2 softtabstop=2 tabstop=2",
+    })
+
+    vim.api.nvim_create_autocmd("FileType", {
       desc = "Enable wrap and spell for text like documents",
       group = vim.api.nvim_create_augroup("auto_spell", { clear = true }),
       pattern = { "gitcommit", "markdown", "text", "plaintex" },
