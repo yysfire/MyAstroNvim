@@ -103,6 +103,7 @@ return {
         "htmldjango",
         "javascript",
         "jsx",
+        "lua",
         "markdown",
         "md",
         "toml",
