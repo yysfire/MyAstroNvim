@@ -11,6 +11,7 @@ return function(local_vim)
     softtabstop = 4,       -- sets vim.opt.softtabstop
     tabstop = 8,           -- sets vim.opt.tabstop
     wrapscan = false,      -- 搜索到文件两端不重新搜索
+    list = true,           -- show tabs and trailing spaces
   }
 
   local_vim.g = {
