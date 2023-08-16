@@ -34,4 +34,15 @@ return {
       -- refer to the configuration section below
     },
   },
+  {
+    "linux-cultist/venv-selector.nvim",
+    keys = { { "<leader>lv", "<cmd>:VenvSelect<cr>", desc = "Select VirtualEnv" } },
+    config = function()
+      local venv_selector = require("venv-selector")
+      venv_selector.setup({
+        name = { "venv", ".venv" },
+        -- changed_venv_hooks = { venv_selector.hooks.pylsp_hook, venv_elector.hooks.pyright_hook }
+      })
+    end
+  },
 }
