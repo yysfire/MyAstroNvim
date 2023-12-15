@@ -43,7 +43,11 @@ return function(local_vim)
   --   local_vim.opt.whichwrap = vim.opt.whichwrap - { 'b', 's' } -- removing option from list
   --   local_vim.opt.shortmess = vim.opt.shortmess + { I = true } -- add to option list
 
+  local_vim.opt.listchars = vim.opt.listchars:remove("tab")
+  local_vim.opt.listchars = vim.opt.listchars:remove("nbsp")
   local_vim.opt.listchars = vim.opt.listchars:append "space:⋅"
+  local_vim.opt.listchars = vim.opt.listchars:append "tab:| "
+  local_vim.opt.listchars = vim.opt.listchars:append "nbsp:␣"
 
   return local_vim
 end
