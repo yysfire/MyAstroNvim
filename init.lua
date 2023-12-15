@@ -117,6 +117,13 @@ return {
     })
 
     vim.api.nvim_create_autocmd("FileType", {
+      pattern = {
+        "go",
+      },
+      command = "setlocal shiftwidth=8 softtabstop=0 tabstop=8",
+    })
+
+    vim.api.nvim_create_autocmd("FileType", {
       desc = "Enable wrap and spell for text like documents",
       group = vim.api.nvim_create_augroup("auto_spell", { clear = true }),
       pattern = { "gitcommit", "markdown", "text", "plaintex" },
